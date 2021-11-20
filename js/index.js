@@ -1,53 +1,83 @@
-// Tipo de datos primitivos
+// alert('Este es un alert')
+
+// let nombre = 'Franco'
+
 /*
-
-  - string
-  - number
-  - boolean
-  - Symbol
-  - BigInt
-  - undefined
-  - null
-
-  Tipos de datos primitivos NOOOO
-  poseen propiedades ni métodos
-  inmutabilidad
-
-  Objetos
-  Pueden poseer propiedades y métodos
+let nombre = prompt('Como te llamas?')
 
 
-  Cómo se almacenan en memoria
-  
-  Tipos de datos primitivos -> Por valor
-  Objetos -> Por referencia
-
+if (!nombre || nombre !== '') {
+    alert('El nombre es obligatorio')
+    throw new Error('El nombre es obligatorio')
+} else {
+    alert('Hola ' + nombre)
+}
 */
 
-let miVariableStr = '1';
+/*
+let nombre = prompt('Como te llamas?').toUpperCase()
 
-// console.log(typeof miVariableStr);
+console.log(nombre !== 'IVAN');
 
-miVariableNumb = 1;
-
-// console.log(typeof miVariableNumb);
-
-// console.log(miVariableStr + miVariableNumb)
-
-// console.log('Hola ' + 'cómo estas?')
-
-
-nombre = prompt('como te llamas?')
-
-// console.log(nombre.toUpperCase())
-
-if (!nombre) {
-    throw new Error('la manqueaste!')
-
+if (nombre !== 'IVAN') {
+    console.log('ENTRO AL IF')
 } else {
-// object wrapper
-    console.log(nombre.toUpperCase())
-    console.log(nombre[0])
-
-    console.log(nombre)
+    console.log('ENTRO AL ELSE')
+    alert('Credenciales invalidas')
+    throw new Error('Credenciales invalidas')
 }
+*/
+
+/*
+if (!nombre || nombre !== '') {
+    alert('Credenciales invalidas')
+    throw new Error('Credenciales invalidas')
+} else {
+    alert('Hola ' + nombre)
+}
+*/
+
+
+/*
+if (2 !== 1) {
+    console.log('Entro al bloque del IF')
+} else {
+    console.log('Entro al bloque del ELSE')
+}
+*/
+
+
+
+
+if ( true && (true || false)) {
+    console.log('ENTRO AL IF')
+}
+
+
+
+
+
+
+
+
+// Condicionales
+/*
+    >
+    <
+    >=
+    <=
+    &&
+    ||
+    !
+    ===
+    !==
+    
+*/
+
+// if (true && true && 1 < 2 && true ) {
+//     console.log('Es verdadero')
+// }
+
+// if (false || false || 1 < 2 || false ) {
+//     console.log('Es verdadero')
+// } 
